@@ -28,7 +28,9 @@ Treat these as `[P0]`/`[P1]`:
 
 - `DOCPACK/pdf`.
 - `Cargo.lock`: not skipped; an update must be deliberate, review its diff.
-- `fixtures/*.json`: the schema and summary fixture change together with the parser.
+- `fixtures/finance-v1.schema.json` and `fixtures/finance-v1-summary.json`: not skipped. They are the
+  `finance.v1` contract (`README.md`); review them against the parser, since
+  `tests/contract_schema_test.rs` checks field names and constants, not value types.
 
 ## Evidence
 
